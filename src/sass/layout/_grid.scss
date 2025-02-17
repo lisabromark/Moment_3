@@ -1,4 +1,6 @@
-@import "./base/variables";
+@import "../base/_variables";
+@import "../base/_mixins";
+
 
 .container {
     display: grid;
@@ -10,3 +12,23 @@
     grid-template-rows: auto 1fr 1fr auto;
     height: 100%;
 }
+
+@include respond(tablet){
+    .container{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "section1 section1"
+        "footer footer";
+}}
+
+@include respond(mobile){
+   .container{ 
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "section1"
+        "footer";
+}}

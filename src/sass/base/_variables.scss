@@ -1,12 +1,17 @@
 $font-stack:Arial, Helvetica, sans-serif;
-$primary-color: rgb(210, 156, 156);
+$primary-color:#e2c09e;
+$secondary-color: rgb(210, 156, 156);
 $text-color:black;
 
 $breakpoint-tablet:1024px;
+$padding-tablet:1em;
+
 $breakpoint-mobile:600px;
+$padding-mobile:1.5em;
 
 
 body{
     font-family: $font-stack;
-    color:$primary-color;
+    background-color:$primary-color;
 }
+
