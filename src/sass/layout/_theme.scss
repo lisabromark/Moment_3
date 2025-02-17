@@ -1,0 +1,11 @@
+.theme {
+    background: rgb(210, 156, 156);
+    color: black;
+}
+
+@media (prefers-color-scheme: dark){
+    .theme{
+        background: black;
+        color: white;;
+    }
+}

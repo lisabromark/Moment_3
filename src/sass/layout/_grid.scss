@@ -1,0 +1,12 @@
+@import "./base/variables";
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "section1 section1 section1 section1"
+        "footer footer footer footer";
+    grid-template-rows: auto 1fr 1fr auto;
+    height: 100%;
+}
