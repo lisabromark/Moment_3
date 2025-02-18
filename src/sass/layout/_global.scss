@@ -2,8 +2,6 @@
 
 body{
     font-family: $font-stack;
-    background-color:$primary-color;
-    color:$darker-color;
     margin:0;
     padding:0;
 }
@@ -22,5 +20,5 @@ article {
 footer {
     background: $secondary-color;
     grid-area: footer;
-    padding: 1em 0;
+    padding: 2em;
 }

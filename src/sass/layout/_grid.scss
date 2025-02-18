@@ -7,7 +7,6 @@
     grid-template-areas:
         "header header header header"
         "main main main main"
-        "section1 section1 section1 section1"
         "footer footer footer footer";
     grid-template-rows: auto 1fr 1fr auto;
 }
@@ -18,7 +17,6 @@
     grid-template-areas:
         "header header"
         "main main"
-        "section1 section1"
         "footer footer";
 }}
 
@@ -28,6 +26,5 @@
     grid-template-areas:
         "header"
         "main"
-        "section1"
         "footer";
 }}

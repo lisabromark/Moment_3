@@ -1,13 +1,23 @@
 @import "../base/_variables";
 
 .theme {
-    background: rgb(225, 169, 169);
-    color: black;
+    background-color:$primary-color;
+    color:$darker-color;
 }
 
 @media (prefers-color-scheme: dark){
     .theme{
         background-color: $primary-color-dm;
-        color: rgb(230,180,180);
+        color: $secondary-color-dm;
+
+        nav{
+            background-color: $secondary-color-dm;
+            color:$primary-color-dm;
+        }
+
+        footer{
+            background-color: $secondary-color-dm;
+            color:$primary-color-dm
+        }
     }
 }

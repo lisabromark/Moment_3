@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../sass/main.scss">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
     <title>Document</title>
     <script src="../js/main.js" type="module"></script>
 </head>
 
-<body>
+<body class="theme">
     <header>
         <div class="container">
 
@@ -26,6 +27,8 @@
                     <li><a href="index.html">Startsida</a></li>
                     <li><a href="sass.html">SASS</a> </li>
                     <li><a href="images.html">Galleri</a></li>
+                    <li><a href="#">Undersida4</a></li>
+                    <li><a href="#">Undersida5</a></li>
                 </ul>
             </nav>
         </div>
@@ -47,53 +50,15 @@
                     <li>Lägg till startsida i package.json, samt kommandon för start och
                         build, då finns genvägar (npm start/npm build) för att snabbt paketera ihop för automatisk
                         publicering.</li>
-                    <li>Underkataloger till src skapas för html, css, bilder och javascript.</li>
-                </ul>
-                <h3>Del 2 - Skapande av hemsida:</h3>
-                <ul>
-                    <li>Verifiera i html-filer att sökvägar till css, js och images är korrekta.</li>
-                    <li>Lägg till type="module" för javascript i index.html så att Parcel kan göra ett paket av
-                        allt och optimera processen automatiskt.</li>
-                    <li>Lägg till relevanta delar för att skapa en responsiv hemsida (inkl. undersidor) - under
-                        utvecklingens gång används en live server som fås genom (npm run start),
-                        då kommer ändringar synas direkt utan att omladdning behövs, dessutom är det inte filerna i
-                        src som
-                        körs, utan optimerade filer som ligger i dist-katalogen.</li>
-                    <li>Git-repo används under utvecklingens gång för versionshantering.</li>
-                </ul>
-                <h3>Del 3 - Publicering av hemsida:</h3>
-                <ul>
-                    <li>Netlify används för publicering, där (npm run build) används.
-                    <li>Genom att välja deploy så knyts git-repot till Netlify som ligger och lyssnar på förändringar
-                        och automatiskt gör
-                        ett nytt bygge vid varje commit.</li>
-                </ul>
-                <h3>Verktyg för automatisering</h3>
-                <ul>
-                    <li>
-                        Node.js:
-                    </li>
-                    <ul>
-                        <li>https-förfrågningar</li>
-                        <li>databasoperationer</li>
-                        <li>asynkrona operationer</li>
-                        <li>kodoptimering</li>
-                    </ul>
-                    <li>Node.js + Parcel:</li>
-                    <ul>
-                        <li>byggflöden</li>
-                    </ul>
-                    <li>Netlify:</li>
-                    <ul>
-                        <li>publicering av repo</li>
-                        <li>skapar domän</li>
-
-                    </ul>
-                </ul>
+                       </ul>
             </article>
         </main>
     </div>
-
+    <footer>
+        <span class="material-icons">email</span>
+        <span class="material-icons">phone</span>
+        <span class="material-icons">map</span>
+       </footer>
 </body>
 
 </html>
