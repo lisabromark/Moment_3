@@ -1,19 +1,20 @@
 $font-stack:Arial, Helvetica, sans-serif;
-$primary-color:#e2c09e;
+$text-line-height: 1.5;
+
+$primary-color:#f1d5b9;
+$darker-color:darken($primary-color, 70%);
+$primary-color-dm:#5a2a1d;
+/*$darker-color-dm:*/
+
 $secondary-color: rgb(210, 156, 156);
-$text-color:black;
+$lighter-color: lighten($secondary-color, 20%);
+$secondary-color-dm: rgb(210, 156, 156);
+/*$lighter-color-dm:*/
+
 
 $breakpoint-tablet:1024px;
 $padding-tablet:1em;
 
 $breakpoint-mobile:600px;
 $padding-mobile:1.5em;
-
-
-body{
-    font-family: $font-stack;
-    background-color:$primary-color;
-    margin:0;
-    padding:0;
-}
 

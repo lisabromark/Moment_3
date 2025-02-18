@@ -1,13 +1,13 @@
 @import "../base/_variables";
 
 .theme {
-    background: rgb(210, 156, 156);
+    background: rgb(225, 169, 169);
     color: black;
 }
 
 @media (prefers-color-scheme: dark){
     .theme{
-        background: black;
-        color: white;;
+        background-color: $primary-color-dm;
+        color: rgb(230,180,180);
     }
 }

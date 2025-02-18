@@ -1,0 +1,26 @@
+@import "../base/_variables";
+
+body{
+    font-family: $font-stack;
+    background-color:$primary-color;
+    color:$darker-color;
+    margin:0;
+    padding:0;
+}
+
+#main {
+    grid-area: main;
+    display: grid;
+    place-items: center;
+}
+
+article {
+    max-width: 800px;
+    width: 90%;
+}
+
+footer {
+    background: $secondary-color;
+    grid-area: footer;
+    padding: 1em 0;
+}
