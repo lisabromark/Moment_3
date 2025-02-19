@@ -1,5 +1,8 @@
 @import "../base/_variables";
 
+
+// Stöd för ljust och mörkt tema med media query samt Selector inheritance ("@extend").
+
 .theme {
     background-color:$primary-color;
     color:$darker-color;
@@ -16,8 +19,7 @@
         }
 
         footer{
-            background-color: $secondary-color-dm;
-            color:$primary-color-dm
+            @extend nav;
         }
     }
 }
