@@ -4,11 +4,9 @@
 
 nav {
     background-color:$secondary-color;
-    grid-area: header;
-    width: 100%;
     display: grid;
     justify-content: center;
-    padding: 2em;
+    padding: 1.5em;
 }
 
 // Meny i desktop-läge och exempel på nesting
@@ -16,7 +14,7 @@ nav {
 .menu {
     display: grid;
     list-style: none;
-    font-weight:bold;
+    font-weight: bold;
     margin: 0;
     padding: 0;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -36,8 +34,10 @@ a {
 }
 }
 
+//döljer den där lilla rutan
+
 .dropdown {
-    opacity:0;
+    display:none;
 }
 
 @include respond(mobile){
