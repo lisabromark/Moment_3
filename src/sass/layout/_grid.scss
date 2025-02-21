@@ -1,5 +1,4 @@
-@import "../base/_variables";
-@import "../base/_mixins";
+@use "../base/_mixins";
 
 
 .container {
@@ -12,7 +11,7 @@
     min-height:100vh;
    }
 
-@include respond(tablet){
+@include mixins.respond(tablet){
     .container{
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -21,7 +20,7 @@
         "footer footer";
 }}
 
-@include respond(mobile){
+@include mixins.respond(mobile){
    .container{ 
     grid-template-columns: 1fr;
     grid-template-areas:
