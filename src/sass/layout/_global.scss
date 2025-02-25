@@ -1,8 +1,8 @@
-@import "../base/_variables";
+@use "../base/_variables";
 
 
 body {
-    font-family: $font-stack;
+    font-family: variables.$font-stack;
     margin: 0;
     padding: 0;
     place-items: stretch;
@@ -32,7 +32,7 @@ article {
 }
 
 footer {
-    background: $secondary-color;
+    background: variables.$secondary-color;
     grid-area: footer;
     padding: 1em;
 }
